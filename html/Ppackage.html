@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../styles/headfoot.css">
+   <link rel="stylesheet" type="text/css" href="../styles/Ppackage.css">
+   <link rel="icon" href="../images/LOGO.jpg" type="image/x-icon">
+   <script type="text/javascript" src="../js/Ppackage.js"></script>
+  <title></title>
+</head>
+<body style="background-image: url('../images/itback.jpg'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+	<style type="text/css">
+		.dropdown {
+			  float: right;
+			  overflow: hidden;
+			}
+
+		.dropdown {
+			  font-size: 16px;  
+			  border: none;
+			  outline: none;
+			  color: white;
+			   
+			  background-color: inherit;
+			  font-family: inherit;
+			  margin: 0;
+			}
+
+		.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  top:60px;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+
+		.dropdown-content a {
+			  float: none;
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;
+			}
+		.dropdown:hover .dropdown-content {
+			  display: block;
+			  
+			}
+		.dropdown-content a:hover{
+				color: white;
+			}
+			
+	</style>
+<body>
+  <header>
+   <div>
+			<ul class="navi">
+				<li><img src="../images/LOGO.jpg" width="60" height="60"></li>
+				<li class="compn">Fantasy Fitness Trainer</li>
+			   	<li ><a href="register.php">Sign Up</a></li>
+			 	<li class="dropdown" class="dropbtn">
+			  	<a  href="#">Login</a>
+			  			<div class="dropdown-content">
+			      		<a href="../php/login.php">User login</a>
+			      		<a href="../php/Tlogin.php">Trainer login</a>
+			    	</div>
+			    </li>
+			 
+			  	<li ><a href="items.html">Items</a></li>
+			  	<li class="dropdown" class="dropbtn">
+			  		<a  href="#">Packages</a>
+			   		<div class="dropdown-content">
+      					<a href="Spackage.html">Standard Package</a>
+     					<a href="Ppackage.html">Premium Package</a>
+     					<a href="package.html">Buy Now</a>
+    				</div>
+				</li>
+			  <li><a href="Aboutus.html">About Us</a></li>
+			  <li ><a href="home.html" >Home</a></li>
+		    </ul>
+		</div>
+  </header>
+	
+<br><br>
+  <div class = "Ppack">
+		<div class = "Pfont">
+		<h2>Premium Package</h2></div>
+	</div>
+	<div id="img">
+		<center><img src="../images/pkdetails.png"></center>
+    </div>
+    <div class ="p1">
+	<h1 style="font-family:cursive; margin:50px; color: #D4A017; text-shadow: 4px 4px 6px black;">The Premium Package</h1>
+	<div class = "pp">
+		<p><b>Ready for an All-Access Pass to every Fantasy workout?<br><br>
+		The  Premium Plan is the one for you.<br>
+		This plan includes every single one of our online workouts and
+	    all 40 diets,<br><br>
+	    for an entire year, all for $39.</b></p>
+	 </div>
+	</div>
+
+	<div class = "pimgs">
+	    <img src="../images/spback.png" alt="s1" width="550px" height="350px">
+	</div> 
+
+	<div class ="p2">
+		<br><br><br><br><br><br>
+	<button id="btn1" onclick="tog('btn1')">What's Included &#8675;</button>
+
+		<ul class ="gad" id="gad">
+		<li><b> The 4 week Fat Burner workout plan.</li>
+        <li>The 8 week Muscle Toner plan.</li>
+        <li>The 12 week Beach Bod Shredder plan.</li>
+ 		<li>Access to 400 online workout plans.</li>
+ 		<li>Custom diets and grocery lists for each plan.</li>
+ 		<li>Printable pdf workout plans for travelling.</li>
+ 		<li>Workout video library with explanations of all exercises.</li>
+ 		<li>Support and feedback from Franklin anytime you need.</li>
+ 		<li>Exercise, workout and weight loss trackers.</li>
+ 		<b></ul>
+	</div> 
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class = "pimgs1">
+	    <img src="../images/back.jpg" alt="s1" width="550px" height="350px">
+	</div>  
+	<br><br><br><br><br><br><br> 
+	<div class ="p3">
+	<button id="btn2" onclick="tog('btn2')">Workout Anywhere, Anytime &#8675;</button>
+	
+		<ul class ="gad1" id="gad1">
+		<li>With the Fantasy Standard Plan, you can workout anywhere, <br>anytime.</li> 
+		<li>Fantasy workouts are designed to help you get in shape,<br> no matter where you prefer to workout.</li>
+		<li>Home workouts</li>
+ 		<li>Travel workouts</li>
+ 		<li>Gym workouts</li>
+ 		<li>Outdoor & indoor</li>
+ 		<li>Men & Women workouts</li>
+ 		<li>Beginner to advanced</li>
+ 		<div class = "imgs2">
+	    <img src="../images/s3.png" alt="s1" width="550px" height="350px">
+	</div>
+ 	</ul>
+	 </div> 
+	   
+</div>
+	</div> 
+  <footer id="footer" class="footer">
+        <br>
+        <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="35" height="30"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="../images/instagram.png" width="35" height="30"></a>
+        <a href="https://twitter.com/?lang=en"><img src="../images/twitter.png" width="35" height="30"><br><br></a>
+        <font color="white"> Address:<br>
+    Keas 69 Str.
+    15234, Chalandri
+    Athens,
+    Greece<br>
+
+    +94-210601931 (landline)
+    +94-697766406 (mobile phone)
+    +94-210639890 (fax)</font><br><br>
+
+        <img src="../images/LOGO.jpg" width="100" height="100" alt="Logo" />
+    <p class="copyright normal">&copy; 2020 <span > Fitness.</span> All Rights Reserved.</p>
+  </footer>
+  
+
+</body>
+</html>

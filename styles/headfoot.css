@@ -1,0 +1,53 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.navi{
+  list-style-type: none; 
+  margin: 0; padding: 0; 
+  overflow: hidden;
+  background-color: #333;
+}
+.compn{
+  display: block;
+  color: white;
+  padding:13px 25px;
+  float: left;
+  font-size: 25px;
+  font-family:Terminator Two;
+}
+li img{
+  float: left;
+}
+li a{
+  float:right; 
+  display: block;  
+  padding:20px 25px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: #3090C7;
+  height: 20px;
+}
+.footer{
+  list-style-type: none; 
+  margin: 0; padding: 0; 
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;  
+  
+}
+.marquee{
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}

@@ -1,0 +1,94 @@
+
+.Ppack {
+  background-color: #D4A017;
+  padding: 25px;
+  border: 2px solid black;
+ 
+}
+.Pfont {
+text-align:center;
+}
+.pp {
+  font-size: 20px;
+    margin:50px;
+}
+.p1 {
+  width: 40%;
+  margin: 70px; 
+  
+}
+.pimgs {
+  position: absolute;
+    z-index: 1;
+    top: 690px;
+    left: 700px;
+    overflow-x: hidden;
+  margin: 70px; 
+  
+}
+button{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer; 
+  outline: none;
+  font-size: 40px;
+  font-family:cursive; 
+  margin:50px; 
+  color:#D4A017; 
+  text-shadow: 4px 4px 6px black;
+}
+button:hover{
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.p2 {
+  position: absolute;
+    z-index: 1;
+    top: 1000px;
+    left: 650px;
+    overflow-x: hidden;
+  width: 40%;
+  margin: 70px; 
+  }
+  .gad{
+  font-size: 20px;
+    margin:50px;
+    display: none;
+}
+.pimgs1 {
+  position: absolute;
+    z-index: 1;
+    top: 1200px;
+    overflow-x: hidden;
+  margin: 70px; 
+  }
+.gad1 {
+  font-size: 20px;
+    margin:50px;
+    display: none;
+}
+.p3 {
+  width: 40%;
+  margin: 70px; 
+}
+
+.imgs2 {
+  position: absolute;
+    z-index: 1;
+    top: 1850px;
+    left: 700px;
+    overflow-x: hidden;
+  margin: 70px; 
+  
+}
+#img img{
+  background-size: cover;
+  padding: 15px;
+}
+
+
+
+

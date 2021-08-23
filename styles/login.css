@@ -1,0 +1,56 @@
+.login{
+	background-image: url(../images/loginbk.jpg);
+	border-radius: 5%;
+	border-style: none;
+	width: 60%;
+	height: 100%;
+	padding: 10px;
+	margin: 60px;
+	margin-left: 20%;
+	font-family: cursive;
+}
+.user{
+	position: absolute;
+	left: 55%;
+	top: 40%;
+}
+.userpic{
+	position: absolute;
+	left: 25%;
+	top: 40%;
+}
+.user input,.btn{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border:  #ccc;
+	border-radius: 30px;
+	box-sizing: border-box;
+	background-color: #e1e5e5;
+}
+a{
+	text-decoration: none;
+}
+.btn{
+	background-color: green;
+	font-weight: bold;
+	color: white;
+}
+hr{
+	border:2px solid #e1e5e5;
+	border-radius: 10px;
+}
+.img1{
+	width: 200px;
+	height: 40px;
+}
+.img2{
+	width: 200px;
+	height: 30px;
+}
+.deletepic{
+	position: absolute;
+	left: 60px;
+	top: 50%;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../styles/aboutstyles.css">
+	<script type="text/javascript" src="../js/fitness.js"></script>
+	<link rel="icon" href="../images/LOGO.jpg" type="image/x-icon">
+
+	<title>Trainer Registration</title>
+</head>
+<body>
+<style type="text/css">
+		.dropdown {
+			  float: right;
+			  overflow: hidden;
+			}
+
+		.dropdown {
+			  font-size: 16px;  
+			  border: none;
+			  outline: none;
+			  color: white;
+			   
+			  background-color: inherit;
+			  font-family: inherit;
+			  margin: 0;
+			}
+
+		.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  top:60px;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+
+		.dropdown-content a {
+			  float: none;
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			  text-align: left;
+			}
+		.dropdown:hover .dropdown-content {
+			  display: block;
+			  
+			}
+		.dropdown-content a:hover{
+				color: white;
+			}
+			
+	</style>
+
+	<header>
+		<div>
+			<ul class="navi">
+				<li><img src="../images/LOGO.jpg" width="60" height="60"></li>
+				<li class="compn">Fantasy Fitness Trainer</li>
+			   	<li ><a href="register.php">Sign Up</a></li>
+			 	<li class="dropdown" class="dropbtn">
+			  	<a  href="#">Login</a>
+			  			<div class="dropdown-content">
+			      		<a href="../php/login.php">User login</a>
+			      		<a href="../php/Tlogin.php">Trainer login</a>
+			    	</div>
+			    </li>
+			 
+			  	<li ><a href="items.html">Items</a></li>
+			  	<li class="dropdown" class="dropbtn">
+			  		<a  href="#">Packages</a>
+			   		<div class="dropdown-content">
+      					<a href="Spackage.html">Standard Package</a>
+     					<a href="Ppackage.html">Premium Package</a>
+     					<a href="package.html">Buy Now</a>
+    				</div>
+				</li>
+			  <li><a href="Aboutus.html">About Us</a></li>
+			  <li ><a href="home.html" >Home</a></li>
+		    </ul>
+		</div>
+	</header><br>
+<br>
+	<style>
+	  body{
+			background-image: url('../images/vx.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
+
+
+	<div class="middle_div_right" align="center">
+	<form  class="form" action="../php/TRegister.php" target="_self" method="POST" enctype="multipart/form-data" onsubmit="return checkPasswords()">
+	<h1 class="hd1">Trainer Registration</h1>
+	<div align="left">
+	<h2>Profile Photo</h2>
+
+	<img class="img1" src="../images/avatar1.png" alt="Avatar">
+
+	<input type="file"  accept="image/*" name="image" id="file" style="display: none;">
+	<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+
+	<img id="output" width="200" />	
+	</div>
+
+
+
+	<h2>Personal Information</h2>
+	
+	<center>
+		 First name:<br>
+ 	 	 <input type="text1" id="fname" name="fname" placeholder="First Name" required><br><br>
+ 	 	 Last name:<br>
+ 	 	 <input type="text1" id="lname" name="lname" placeholder="Last Name" required><br><br>
+ 	 	 Gender:<br>
+ 	 	 <input type="radio" id="gender" value="male" name="gender">Male
+ 	 	 <input type="radio" id="gender" value="female" name="gender">Female<br><br>
+		 <p id="ag"></p>
+ 	 	 Tp Number:<br>
+ 	 	 <input type="text1" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0123456789 " reguired><br><br>
+ 	 	 Qualifications:<br>
+ 	 	 <textarea id="text2" name="Qualifications" rows="8" cols="98" placeholder="Qualifications" required></textarea><br><br>
+ 		 RegionID:<br>
+ 		 <input type="text1" id="region" name="region" placeholder="Region" required><br><br>
+ 	 	 Username:<br>
+ 	 	 <input type="text1" id="username" name="username" placeholder="Username" required><br><br>
+ 	 	 <div class="cont">
+ 	 	 Password:<br>
+    	<input type="password" placeholder="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required=""><br><br>
+    	
+    	 </div>
+  		
+  		<div id="message">
+  			<h3>Password must contain the following:</h3>
+  			<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  			<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  			<p id="number" class="invalid">A <b>number</b></p>
+  			<p id="length" class="invalid">Minimum <b>5 characters</b></p>
+  			<p id="length" class="invalid">Maximum<b>10 characters</b></p>
+		</div>
+		Re-enter password:<br>
+		<input type="password" name="rpwd" id="rpwd" placeholder="Confirm Password" required="" ><br><br>
+		
+ 	 	 	
+		 <input type="submit"  value="submit"  name="btn1">
+		  </div>
+		 
+<div>
+ 	 	 
+	
+ 	 </center>
+ 	</form><br><br><br><br><br><br><br><br>
+
+ 	<footer id="footer" class="footer">
+        <br>
+        <a href="https://www.facebook.com/"><img src="../images/facebook.png" width="35" height="30"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="../images/instagram.png" width="35" height="30"></a>
+        <a href="https://twitter.com/?lang=en"><img src="../images/twitter.png" width="35" height="30"><br><br></a>
+        <font color="white"> Address:<br>
+		Keas 69 Str.
+		456, Chalandri
+		Colombo,
+		Sri Lanka<br>
+
+		+94-663456234 (landline)
+		+94-783412987 (mobile phone)
+		+94-760639893 (fax)</font><br><br>
+
+        <img src="../images/LOGO.jpg" width="100" height="100" alt="Logo" />
+		<p class="copyright normal">© 2019 <span > Fitness.</span> All Rights Reserved.</p>
+	</footer>
+	
+	
+</body>
+</html>

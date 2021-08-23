@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.bg-image {     /* make changes in background image */
+  
+  background-image: url("../images/back1.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  
+  color: #FFFFFF;
+  font-weight: bold;
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.navi{
+  list-style-type: none; 
+  margin: 0; padding: 0; 
+  overflow: hidden;
+  background-color: #333;
+}
+.compn{  /*put styles in the site name in nav bar */
+  display: block;
+  color: white;
+  padding:13px 25px;
+  float: left;
+  font-size: 25px;
+  font-family:Terminator Two;
+}
+li img{
+  float: left;
+}
+li a{
+  float:right; 
+  display: block;  
+  padding:20px 25px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: #3090C7;
+  height: 20px;
+}
+.footer{    /* put styles on footer */
+  list-style-type: none; 
+  margin: 0; padding: 0; 
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+.marquee{
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
